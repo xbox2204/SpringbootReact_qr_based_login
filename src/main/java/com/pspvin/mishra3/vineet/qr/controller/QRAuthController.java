@@ -15,7 +15,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 @RestController
 @RequestMapping("/api/qr")
-@CrossOrigin("*")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class QRAuthController {
 
     // Temporary in-memory store: Map<String, String> -> sessionId: status (PENDING/APPROVED)
